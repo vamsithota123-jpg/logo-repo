@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #1c2857;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.logo-section {
+    flex: 1;
+    text-align: center;
+}
+
+.logo-section img {
+    width: 150px;
+}
+
+.footer-columns {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px 0;
+}
+
+.column h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 12px;
+}
+
+.footer-bottom .country-language {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-bottom .legal {
+    flex: 2;
+    text-align: right;
+}
+
+.footer-bottom a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+    }
+    
+    .column {
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom .country-language {
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom .legal {
+        margin-top: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2024-09-24/Screenshot%202024-09-24%20153613_303016.png" alt="Logo">
+            </div>
+            <div class="footer-columns">
+                <div class="column">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li>Gift cards</li>
+                        <li>Etsy Registry</li>
+                        <li>Sitemap</li>
+                        <li>Etsy blog</li>
+                        <li>Etsy UK</li>
+                        <li>Etsy Germany</li>
+                        <li>Etsy Canada</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Sell</h4>
+                    <ul>
+                        <li>Sell on Etsy</li>
+                        <li>Teams</li>
+                        <li>Forums</li>
+                        <li>Affiliates & Creators</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>About</h4>
+                    <ul>
+                        <li>Etsy, Inc.</li>
+                        <li>Policies</li>
+                        <li>Investors</li>
+                        <li>Careers</li>
+                        <li>Press</li>
+                        <li>Impact</li>
+                        <li>Legal</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li>Gift cards</li>
+                        <li>Etsy Registry</li>
+                        <li>Sitemap</li>
+                        <li>Etsy blog</li>
+                        <li>Etsy UK</li>
+                        <li>Etsy Germany</li>
+                        <li>Etsy Canada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="country-language">
+                <span>India | English (IN) | ₹ (INR)</span>
+            </div>
+            <div class="legal">
+                <p>© 2024 Etsy, Inc.</p>
+                <a href="#">Terms of Use</a> |
+                <a href="#">Privacy</a> |
+                <a href="#">Internet-based ads</a> |
+                <a href="#">Local Shops</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
